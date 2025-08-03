@@ -53,8 +53,7 @@ Crie o banco books no MySQL;
 Execute o script SQL para criar a tabela booksapi:
 
 sql
-Copiar
-Editar
+
 CREATE TABLE booksapi (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
@@ -64,8 +63,6 @@ CREATE TABLE booksapi (
 Configure a conexão no arquivo config.php (ou similar):
 
 php
-Copiar
-Editar
 <?php
 $servername = "localhost";
 $username = "root";       // Usuário do MySQL
@@ -87,24 +84,13 @@ http://localhost/booksapi/
 Você pode usar ferramentas como RestTestTest ou Postman para testar as rotas da API.
 
 Exemplo de requisição JSON para POST / PUT
-json
-Copiar
-Editar
+
 {
   "title": "Dom Casmurro",
   "sinopsis": "Romance clássico de Machado de Assis que aborda ciúmes e memórias.",
   "author": "Machado de Assis"
 }
-📂 Estrutura do projeto
-bash
-Copiar
-Editar
-books-synopsis-api/
-├── config.php           # Configuração do banco
-├── index.php            # Ponto de entrada da API e roteamento
-├── sinopses.php         # Funções CRUD para sinopses
-├── .htaccess            # Configuração para URLs amigáveis (opcional)
-└── README.md
+
 
 ✍️ Autor
 Desenvolvido por Raone Ferreira
